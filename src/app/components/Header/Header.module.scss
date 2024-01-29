@@ -1,0 +1,30 @@
+
+.instagram {
+  position: relative;
+  display: block;
+  background-image: url("../../../images/icons/instagram-icon.svg");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.whatsApp {
+  position: relative;
+  display: block;
+  background-image: url("../../../images/icons/whatsapp-icon.svg");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

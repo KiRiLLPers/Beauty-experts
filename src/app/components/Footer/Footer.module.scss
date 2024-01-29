@@ -1,0 +1,44 @@
+@import "src/scss/main";
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  &:after {
+    content: '';
+    background-image: url("../../../images/footer/line.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    max-width: 1440px;
+    height: 110%;
+    top: 0;
+    z-index: 10;
+  }
+
+  h2 {
+    font-size: 120px;
+    line-height: 70px;
+    color: $base-white;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .footer {
+    &:after {
+      height: 80%;
+      top: unset;
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .footer {
+    &:after {
+      height: 50%;
+    }
+  }
+}
