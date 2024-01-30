@@ -1,3 +1,9 @@
+@import "src/scss/main";
+
+.header {
+  position: relative;
+  z-index: 101;
+}
 
 .instagram {
   position: relative;
@@ -27,4 +33,31 @@
       opacity: 0.7;
     }
   }
+}
+
+.menu {
+  position: fixed;
+  background: $base-white;
+  top: 76px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease-in-out, visibility 1s;
+}
+
+.menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-item {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.menu-item.open {
+  opacity: 1;
 }
