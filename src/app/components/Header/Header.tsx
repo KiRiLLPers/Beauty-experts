@@ -12,10 +12,10 @@ const Header = () => {
     }
 
     const menuTab = [
-        ['УСЛУГИ', ['/']],
-        ['СПЕЦИАЛИСТЫ', '/'],
-        ['ПРОДУКЦИЯ', '/'],
-        ['КОНТАКТЫ', '/']
+        ['Услуги', '/'],
+        ['Специалисты', '/'],
+        ['Продукция', '/'],
+        ['Контакты', '/']
     ]
 
     return (
@@ -26,7 +26,7 @@ const Header = () => {
                     <div className='flex'>
                         <ul className='flex gap-7 w-[536px] xl-max:hidden items-center'>
                             {menuTab.map(([title, url], index) => (
-                                <li key={index} className='cursor-pointer hover:opacity-70'>
+                                <li key={index} className='cursor-pointer hover:opacity-70 uppercase'>
                                     {title}
                                 </li>
                             ))}
@@ -50,12 +50,17 @@ const Header = () => {
                     </ul>
                 </div>
             </header>
-            <div className={`${css.menu} ${isOpen ? css.open : ''}`}>
-                <ul>
-                    <li className={`${css.menuItem} ${isOpen ? css.open : ''}`}>asdasd</li>
-                    <li className={`${css.menuItem} ${isOpen ? css.open : ''}`}>asdasd</li>
-                    <li className={`${css.menuItem} ${isOpen ? css.open : ''}`}>asdasd</li>
-                    <li className={`${css.menuItem} ${isOpen ? css.open : ''}`}>asdasd</li>
+            <div className={`${css.menu} ${isOpen ? css.open : ''} flex justify-center items-center`}>
+                <ul className={`flex flex-col justify-center items-center gap-[40px] md-max:gap-[24px]`}>
+                    <li className={``}></li>
+                    {menuTab.map(([title, url], index) =>
+                        <li
+                        className={`${css.menuItem} ${isOpen ? css.open : ''} cursor-pointer font-felidae text-56 h-full leading-60 text-green lg-max:text-48 lg-max:leading-54 md-max:text-40 md-max:leading-44`}
+                        key={index}
+                        >
+                            {title}
+                        </li>)}
+                    <li className={``}></li>
                 </ul>
             </div>
         </>
