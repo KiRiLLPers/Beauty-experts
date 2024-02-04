@@ -1,0 +1,95 @@
+@import "src/scss/main";
+
+.mainSection {
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+
+  h1 {
+    color: $green;
+    font-size: 140px;
+    line-height: 140px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+@keyframes scrollTop {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-1070px); // половина от изначальных -1680px
+  }
+}
+
+@keyframes scrollDown {
+  0%   { transform: translateY(-1195px); }
+  100% { transform: translateY(100px); }
+}
+
+.verticalSliderTop {
+  transform: translateY(-100px);
+  animation: scrollTop 25s linear infinite;
+  animation-delay: 2s;
+}
+
+.verticalSliderDown {
+  transform: translateY(-1195px);
+  animation: scrollDown 25s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// Примените анимации к вашим элементам
+p.slideInFromTop {
+  animation: slideInFromTop 2s ease-out forwards;
+}
+p.slideInFromBottom {
+  animation: slideInFromBottom 2s ease-out forwards;
+}
+h1.fadeIn {
+  animation: fadeIn 2s ease-in forwards;
+}
+
+.slideRight {
+  animation: slideFromRight 1.5s linear forwards;
+}

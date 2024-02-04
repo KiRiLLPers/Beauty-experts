@@ -27,7 +27,8 @@ const config: Config = {
       '48': '48px',
       '56': '56px',
       '64': '64px',
-      '120': '120px'
+      '120': '120px',
+      '140': '140px'
 
     },
     lineHeight: {
@@ -40,7 +41,9 @@ const config: Config = {
       '44': '44px',
       '54': '54px',
       '60': '60px',
-      '70': '70px'
+      '66': '66px',
+      '70': '70px',
+      '140': '140px'
     },
     screens: {
       '2xl-max': {'max': '1439px'},
