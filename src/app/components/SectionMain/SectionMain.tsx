@@ -15,7 +15,7 @@ export const SectionMain = () => {
         <section className={`${css.mainSection}`}>
             <div className={`bg-soft-light2 flex justify-between gap-[20px] max-h-[772px] overflow-hidden`}>
                 <ul className={`flex flex-col gap-[32px] items-center py-[125px] max-w-[800px]`}>
-                    <li className={`h-[2px] w-full max-w-[120px] bg-soft-light2`}>
+                    <li className={`h-[2px] w-full max-w-[120px] bg-soft-light2 ${css.fadeIn}`}>
                     </li>
                     <li>
                         <p className={`font-felidae text-56 leading-60 text-green text-center ${css.slideInFromTop}`}>профессиональная</p>
@@ -26,7 +26,7 @@ export const SectionMain = () => {
                     <li>
                         <p className={`text-grey text-18 text-center max-w-[520px] ${css.slideInFromBottom}`}>Отражаем индивидуальный стиль и подчеркиваем естественную красоту наших клиентов</p>
                     </li>
-                    <li className={`h-[2px] w-full max-w-[120px] bg-soft-light2`}></li>
+                    <li className={`h-[2px] w-full max-w-[120px] bg-soft-light2 ${css.fadeIn}`}></li>
                 </ul>
                 <div className={`flex gap-[44px] flex-1 justify-center ${css.slideRight}`}>
                     <ul className={`flex flex-col gap-[44px] ${css.verticalSliderTop}`}>

@@ -17,6 +17,32 @@
   }
 }
 
+.verticalSliderTop {
+  transform: translateY(-100px);
+  animation: scrollTop 25s linear infinite;
+  animation-delay: 2s;
+}
+
+.verticalSliderDown {
+  transform: translateY(-1195px);
+  animation: scrollDown 25s linear infinite;
+  animation-delay: 2s;
+}
+
+.slideInFromTop {
+  animation: slideInFromTop 2s ease-out forwards;
+}
+.slideInFromBottom {
+  animation: slideInFromBottom 2s ease-out forwards;
+}
+.fadeIn {
+  animation: fadeIn 2s ease-in forwards;
+}
+
+.slideRight {
+  animation: slideFromRight 1.5s linear forwards;
+}
+
 @keyframes scrollTop {
   0% {
     transform: translateY(-100px);
@@ -29,18 +55,6 @@
 @keyframes scrollDown {
   0%   { transform: translateY(-1195px); }
   100% { transform: translateY(100px); }
-}
-
-.verticalSliderTop {
-  transform: translateY(-100px);
-  animation: scrollTop 25s linear infinite;
-  animation-delay: 2s;
-}
-
-.verticalSliderDown {
-  transform: translateY(-1195px);
-  animation: scrollDown 25s linear infinite;
-  animation-delay: 2s;
 }
 
 @keyframes slideInFromTop {
@@ -77,19 +91,4 @@
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-// Примените анимации к вашим элементам
-p.slideInFromTop {
-  animation: slideInFromTop 2s ease-out forwards;
-}
-p.slideInFromBottom {
-  animation: slideInFromBottom 2s ease-out forwards;
-}
-h1.fadeIn {
-  animation: fadeIn 2s ease-in forwards;
-}
-
-.slideRight {
-  animation: slideFromRight 1.5s linear forwards;
 }
