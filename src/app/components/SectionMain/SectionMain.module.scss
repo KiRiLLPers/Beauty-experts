@@ -19,13 +19,13 @@
 
 .verticalSliderTop {
   transform: translateY(-100px);
-  animation: scrollTop 25s linear infinite;
+  animation: scrollTop 13s linear infinite;
   animation-delay: 2s;
 }
 
 .verticalSliderDown {
-  transform: translateY(-1195px);
-  animation: scrollDown 25s linear infinite;
+  transform: translateY(-1520px);
+  animation: scrollDown 13s linear infinite;
   animation-delay: 2s;
 }
 
@@ -48,12 +48,12 @@
     transform: translateY(-100px);
   }
   100% {
-    transform: translateY(-1070px); // половина от изначальных -1680px
+    transform: translateY(-1720px);
   }
 }
 
 @keyframes scrollDown {
-  0%   { transform: translateY(-1195px); }
+  0%   { transform: translateY(-1520px); }
   100% { transform: translateY(100px); }
 }
 

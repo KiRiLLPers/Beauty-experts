@@ -5,6 +5,7 @@ import logo from '@/images/logo.svg'
 import css from "./Header.module.scss";
 import BurgerButton from "@/components/BurgerButton/BurgerButton";
 import {useState} from "react";
+import Link from "next/link";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     const handleOpenMenu = () => {
@@ -24,13 +25,13 @@ const Header = () => {
                 <div
                     className='max-w-[1440px] w-full px-16 py-6 flex justify-between items-center m-auto 2xl-max:px-[40px] xl-max:px-[20px] xl-max:py-[16px] lg-max:px-[16px]'>
                     <div className='flex'>
-                        <ul className='flex gap-7 w-[536px] xl-max:hidden items-center'>
+                        <nav className='flex gap-7 w-[536px] xl-max:hidden items-center'>
                             {menuTab.map(([title, url], index) => (
-                                <li key={index} className='cursor-pointer hover:opacity-70 uppercase'>
+                                <Link href={url} key={index} className='cursor-pointer hover:opacity-70 uppercase'>
                                     {title}
-                                </li>
+                                </Link>
                             ))}
-                        </ul>
+                        </nav>
                         <BurgerButton isOpen={isOpen} handleOpenMenu={handleOpenMenu}></BurgerButton>
                     </div>
                     <div className='flex-1 ml-[40px] xl-max:ml-0 xl-max:flex xl-max:justify-center'>

@@ -1,15 +1,18 @@
 import css from './SectionMain.module.scss'
 import Image from "next/image";
-import photo from "../../../images/sectionMain/photo.svg"
-import photo1 from "../../../images/sectionMain/photo1.svg"
-import photo2 from "../../../images/sectionMain/photo2.svg"
-import photo3 from "../../../images/sectionMain/photo3.svg"
-import photo4 from "../../../images/sectionMain/photo4.svg"
-import photo5 from "../../../images/sectionMain/photo5.svg"
-import photo6 from "../../../images/sectionMain/photo6.svg"
+import photo from "../../../images/sectionMain/photo.png"
+import photo1 from "../../../images/sectionMain/photo1.png"
+import photo2 from "../../../images/sectionMain/photo2.png"
+import photo3 from "../../../images/sectionMain/photo3.png"
+import photo4 from "../../../images/sectionMain/photo4.png"
+import photo5 from "../../../images/sectionMain/photo5.png"
+import photo6 from "../../../images/sectionMain/photo6.png"
+import photo7 from "../../../images/sectionMain/photo7.png"
+import photo8 from "../../../images/sectionMain/photo8.png"
+import photo9 from "../../../images/sectionMain/photo9.png"
 export const SectionMain = () => {
-    const photoLeft = [photo, photo1, photo2];
-    const photoRight = [photo3, photo4, photo5, photo6];
+    const photoLeft = [photo, photo1, photo2, photo7, photo8];
+    const photoRight = [photo3, photo4, photo5, photo6, photo9];
 
     return (
         <section className={`${css.mainSection}`}>
