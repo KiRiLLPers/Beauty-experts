@@ -4,13 +4,21 @@ import Image from "next/image";
 import logo from '@/images/logo.svg'
 import css from "./Header.module.scss";
 import BurgerButton from "@/components/BurgerButton/BurgerButton";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Link from "next/link";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     const handleOpenMenu = () => {
         setIsOpen(!isOpen)
     }
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [isOpen]);
 
     const menuTab = [
         ['Услуги', '/'],
@@ -21,7 +29,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={`w-full border-b border-b-soft-light2 ${css.header}`}>
+            <header className={`w-full border-b border-b-soft-light ${css.header}`}>
                 <div
                     className='max-w-[1440px] w-full px-16 py-6 flex justify-between items-center m-auto 2xl-max:px-[40px] xl-max:px-[20px] xl-max:py-[16px] lg-max:px-[16px]'>
                     <div className='flex'>

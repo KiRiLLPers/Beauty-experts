@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className='bg-soft-light h-screen '>
+      <body className='bg-white h-screen '>
         <div className='flex flex-col h-screen m-auto'>
             <Header></Header>
             <main className='flex-1'>
