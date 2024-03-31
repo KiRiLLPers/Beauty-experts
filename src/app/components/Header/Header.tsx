@@ -3,9 +3,10 @@
 import Image from "next/image";
 import logo from '@/images/logo.svg'
 import css from "./Header.module.scss";
-import BurgerButton from "@/components/BurgerButton/BurgerButton";
+import BurgerButton from "@/app/components/BurgerButton/BurgerButton";
 import {useEffect, useState} from "react";
 import Link from "next/link";
+
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     const handleOpenMenu = () => {
@@ -64,8 +65,8 @@ const Header = () => {
                     <li className={``}></li>
                     {menuTab.map(([title, url], index) =>
                         <li
-                        className={`${css.menuItem} ${isOpen ? css.open : ''} cursor-pointer font-felidae text-56 h-full leading-60 text-green lg-max:text-48 lg-max:leading-54 md-max:text-40 md-max:leading-44`}
-                        key={index}
+                            className={`${css.menuItem} ${isOpen ? css.open : ''} cursor-pointer font-felidae text-56 h-full leading-60 text-green lg-max:text-48 lg-max:leading-54 md-max:text-40 md-max:leading-44`}
+                            key={index}
                         >
                             {title}
                         </li>)}
