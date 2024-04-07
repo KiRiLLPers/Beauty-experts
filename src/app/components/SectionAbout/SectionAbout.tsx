@@ -1,5 +1,5 @@
 import Image from "next/image";
-import photo from '../../../images/sectionAbout/about.png'
+import photo from '../../../../public/images/sectionAbout/about.png'
 import css from './SectionAbout.module.scss'
 
 export const SectionAbout = () => {

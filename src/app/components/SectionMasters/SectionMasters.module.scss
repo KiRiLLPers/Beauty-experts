@@ -3,8 +3,91 @@
 .wrap {
   overflow: hidden;
   position: relative;
-  max-width: 1440px;
+  margin: 64px 0 64px 284px;
+  display: flex;
+  flex-direction: column;
 
-  div {
+  p {
+    max-width: 1000px;
+    text-indent: 100px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 64px;
+  }
+}
+
+.nextButton {
+  background-image: url('../../../../public/images/icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 41px;
+  height: 20px;
+}
+
+.prevButton {
+  background-image: url('../../../../public/images/icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 41px;
+  height: 20px;
+  transform: rotate(180deg);
+}
+
+.dot {
+  flex-grow: 1;
+  height: 2px;
+  background: grey;
+  opacity: 0.3;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  li {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.dotsWrap {
+  display: flex;
+  justify-content: space-around;
+  gap: 0 40px;
+  margin-bottom: 40px;
+}
+
+.dotsWrap :global(.slick-active) .dot {
+  opacity: 1;
+}
+
+.disabled {
+  opacity: 0;
+}
+
+.image {
+  background-position: bottom;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .wrap {
+    margin: 40px 24px 40px 24px;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .wrap {
+    margin: 40px 16px 40px 16px;
   }
 }

@@ -1,16 +1,17 @@
 import css from './SectionMain.module.scss'
 import Image from "next/image";
 import SliderComponent from "../../components/Slider/Slider";
-import photo from "../../../images/sectionMain/photo.png"
-import photo1 from "../../../images/sectionMain/photo1.png"
-import photo2 from "../../../images/sectionMain/photo2.png"
-import photo3 from "../../../images/sectionMain/photo3.png"
-import photo4 from "../../../images/sectionMain/photo4.png"
-import photo5 from "../../../images/sectionMain/photo5.png"
-import photo6 from "../../../images/sectionMain/photo6.png"
-import photo7 from "../../../images/sectionMain/photo7.png"
-import photo8 from "../../../images/sectionMain/photo8.png"
-import photo9 from "../../../images/sectionMain/photo9.png"
+import photo from "../../../../public/images/sectionMain/photo.png"
+import photo1 from "../../../../public/images/sectionMain/photo1.png"
+import photo2 from "../../../../public/images/sectionMain/photo2.png"
+import photo3 from "../../../../public/images/sectionMain/photo3.png"
+import photo4 from "../../../../public/images/sectionMain/photo4.png"
+import photo5 from "../../../../public/images/sectionMain/photo5.png"
+import photo6 from "../../../../public/images/sectionMain/photo6.png"
+import photo7 from "../../../../public/images/sectionMain/photo7.png"
+import photo8 from "../../../../public/images/sectionMain/photo8.png"
+import photo9 from "../../../../public/images/sectionMain/photo9.png"
+
 export const SectionMain = () => {
     const photoLeft = [photo, photo1, photo2, photo7, photo8];
     const photoRight = [photo3, photo4, photo5, photo6, photo9];
@@ -104,7 +105,8 @@ export const SectionMain = () => {
                         </li>
                         <li className={`h-[1px] w-full max-w-[120px] bg-soft-light ${css.fadeIn}`}></li>
                     </ul>
-                    <div className={`flex gap-[44px] flex-1 justify-center 2xl-max:gap-[24px] xl-max:hidden ${css.fadeIn}`}>
+                    <div
+                        className={`flex gap-[44px] flex-1 justify-center 2xl-max:gap-[24px] xl-max:hidden ${css.fadeIn}`}>
                         <SliderComponent className={`flex flex-col`} settings={leftVerticalSettings}>
                             {upperPhotos.map((photo, index) =>
                                 <Image
@@ -112,8 +114,8 @@ export const SectionMain = () => {
                                     className={`object-cover block min-w-[224px] h-[280px] my-[22px] box-border 2xl-max:my-[12px]`}
                                     src={photo}
                                     alt={`photo${index}`}
-                            >
-                            </Image>)}
+                                >
+                                </Image>)}
                         </SliderComponent>
                         <SliderComponent className={`flex flex-col`} settings={rightVerticalSettings}>
                             {lowerPhotos.map((photo, index) =>
@@ -122,8 +124,8 @@ export const SectionMain = () => {
                                     className={`object-cover block min-w-[224px] h-[280px] my-[22px] box-border 2xl-max:my-[12px]`}
                                     src={photo}
                                     alt={`photo${index}`}
-                            >
-                            </Image>)}
+                                >
+                                </Image>)}
                         </SliderComponent>
                     </div>
                 </div>
@@ -136,16 +138,16 @@ export const SectionMain = () => {
                             src={photo}
                             alt={`photo${index}`}
                             className={`object-cover block h-[260px] min-w-[238px] px-[8px] box-border lg-max:min-w-[140px] lg-max:h-[180px] lg-max:px-[4px] md-max:min-w-[120px] md-max:h-[160px]`}
-                    >
-                    </Image>)}
+                        >
+                        </Image>)}
                 </SliderComponent>
                 <SliderComponent settings={lowerHorizontalSettings}>
-                        {lowerPhotos.map((photo, index) =>
-                            <Image
-                                key={index}
-                                src={photo}
-                                alt={`photo${index}`}
-                                className={`object-cover block h-[260px] min-w-[238px] px-[8px] box-border lg-max:min-w-[140px] lg-max:h-[180px] lg-max:px-[4px] md-max:min-w-[120px] md-max:h-[160px]`}
+                    {lowerPhotos.map((photo, index) =>
+                        <Image
+                            key={index}
+                            src={photo}
+                            alt={`photo${index}`}
+                            className={`object-cover block h-[260px] min-w-[238px] px-[8px] box-border lg-max:min-w-[140px] lg-max:h-[180px] lg-max:px-[4px] md-max:min-w-[120px] md-max:h-[160px]`}
                         >
                         </Image>)}
                 </SliderComponent>
