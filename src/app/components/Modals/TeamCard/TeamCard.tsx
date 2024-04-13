@@ -1,3 +1,38 @@
-export const TeamCard = () => {
-    return <div></div>
+'use client'
+
+import Image from "next/image";
+import {Master} from "@/app/Types/Masters";
+import css from './TeamCard.module.scss';
+import {useEffect} from "react";
+
+type TeamCardProps = {
+    master: Master | undefined;
+    isOpen: boolean;
+    handleCloseCard: any,
+}
+
+export const TeamCard = ({master, isOpen, handleCloseCard}: TeamCardProps) => {
+
+    const handleCloseButtonClick = () => {
+        handleCloseCard();
+    }
+    return <div className={`${css.wrap} ${isOpen ? css.open : ''}`}>
+        <div className={css.wrapper}>
+            <Image src={master?.photo} alt={master?.name ?? ''}
+                   className={`w-[542px] object-cover xl-max:w-[100%] xl-max:h-[740px] lg-max:max-h-[444px] md-max:max-h-[365px]`}></Image>
+            <div>
+                <h2 className={`font-felidae text-72 leading-72 text-green max-w-[408px] pb-[78px] xl-max:hidden`}>Эксперты
+                    студии</h2>
+                <ul>
+                    <li className={`text-grey text-16 leading-26 lg-max:text-14 lg-max:leading-24`}>{master?.profile}</li>
+                    <li className={`font-felidae text-green text-52 leading-60 pb-[16px] xl-max:pb-[8px] lg-max:text-40 lg-max:leading-44`}>{master?.name}</li>
+                    <li className={`text-grey text-16 leading-26 lg-max:text-14 lg-max:leading-24`}>{master?.description}</li>
+                </ul>
+                <span
+                    className={`text-green font-felidae text-24 leading-34 pt-[24px]`}>{master?.experience}<Image
+                    src={master?.icon} alt={'icon'}/></span>
+            </div>
+            <button onClick={handleCloseButtonClick}></button>
+        </div>
+    </div>
 }

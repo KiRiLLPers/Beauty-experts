@@ -6,10 +6,14 @@ import {masters} from "@/app/constants/masters";
 import Image from "next/image";
 import {useEffect, useRef, useState} from "react";
 import Slider from "react-slick";
+import {TeamCard} from "@/app/components/Modals/TeamCard/TeamCard";
+import {Master} from "@/app/Types/Masters";
 
 export const SectionMasters = () => {
     const [windowWidth, setWindowWidth] = useState(0);
     const [slidesToShow, setSlidesToShow] = useState(5);
+    const [isOpenCard, setIsOpenCard] = useState(false)
+    const [masterInfo, setMasterInfo] = useState<undefined | Master>(undefined)
     const [slide, setSlide] = useState(0);
     const sliderRef = useRef<Slider>(null);
 
@@ -41,10 +45,19 @@ export const SectionMasters = () => {
     const nextSlide = () => {
         sliderRef.current?.slickNext();
     };
-
     const prevSlide = () => {
         sliderRef.current?.slickPrev();
     };
+    const handleOpenCard = (master: Master) => {
+        setMasterInfo(master);
+        setIsOpenCard(true);
+        document.body.style.overflow = 'hidden';
+    }
+
+    const handleCloseCard = () => {
+        setIsOpenCard(false)
+        document.body.style.overflow = 'unset';
+    }
     const settings = {
         slidesToShow: 5,
         arrows: false,
@@ -106,25 +119,28 @@ export const SectionMasters = () => {
             красоты</p>
         <div>
             <SliderComponent settings={settings} className={`relative flex flex-col-reverse`} ref={sliderRef}>
-                {masters.map((el, index) => {
-                    return <ul className={``} key={index}>
+                {masters.map((master: Master, index) => {
+                    return <ul key={index}>
                         <li className={`m-[10px] lg-max:m-[5px]`}>
                             <Image
-                                src={el.photo}
+                                src={master.photo}
                                 alt={'photo'}
                                 className={`
                                 ${index % 2 === 0 ? 'h-[420px] xl-max:h-[360px] lg-max:h-[258px]' : 'h-[340px] xl-max:h-[280px] lg-max:h-[198px]'} 
                                 object-cover 
-                                w-[288px] 
+                                w-[288px]
+                                cursor-pointer 
                                 ${css.image}`}
+                                onClick={() => handleOpenCard(master)}
                             >
                             </Image>
                         </li>
-                        <li className={`pt-[16px] font-felidae text-32 leading-42 text-green ml-[10px] lg-max:text-20 lg-max:leading-26`}>{el.name}</li>
-                        <li className={`text-14 leading-22 text-grey ml-[10px] lg-max:text-12 lg-max:leading-22`}>{el.profile}</li>
+                        <li className={`pt-[16px] font-felidae text-32 leading-42 text-green ml-[10px] lg-max:text-20 lg-max:leading-26`}>{master.name}</li>
+                        <li className={`text-14 leading-22 text-grey ml-[10px] lg-max:text-12 lg-max:leading-22`}>{master.profile}</li>
                     </ul>
                 })}
             </SliderComponent>
         </div>
+        <TeamCard master={masterInfo} isOpen={isOpenCard} handleCloseCard={handleCloseCard}></TeamCard>
     </section>
 }
