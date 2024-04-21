@@ -19,7 +19,7 @@ export const TeamCard = ({master, isOpen, handleCloseCard}: TeamCardProps) => {
     return <div className={`${css.wrap} ${isOpen ? css.open : ''}`}>
         <div className={css.wrapper}>
             <Image src={master?.photo} alt={master?.name ?? ''}
-                   className={`w-[542px] object-cover xl-max:w-[100%] xl-max:h-[740px] lg-max:max-h-[444px] md-max:max-h-[365px]`}></Image>
+                   className={`w-[100%] max-w-[542px] h-max max-h-[720px] xl-max:max-w-[100%] object-cover bg-bottom`}></Image>
             <div>
                 <h2 className={`font-felidae text-72 leading-72 text-green max-w-[408px] pb-[78px] xl-max:hidden`}>Эксперты
                     студии</h2>
