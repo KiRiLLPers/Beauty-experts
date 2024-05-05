@@ -1,13 +1,13 @@
 import {CarouselPhoto} from "@/app/Types/CarouselPhoto";
-import photo1 from '../../../public/images/sectionCarousel/photo1.png'
-import photo2 from '../../../public/images/sectionCarousel/photo2.png'
-import photo3 from '../../../public/images/sectionCarousel/photo3.png'
-import photo4 from '../../../public/images/sectionCarousel/photo4.png'
-import photo5 from '../../../public/images/sectionCarousel/photo5.png'
-import photo6 from '../../../public/images/sectionCarousel/photo6.png'
-import photo7 from '../../../public/images/sectionCarousel/photo7.png'
-import photo8 from '../../../public/images/sectionCarousel/photo8.png'
-import photo9 from '../../../public/images/sectionCarousel/photo9.png'
+import photo1 from '../../images/sectionCarousel/sectionCarouselPhoto1.png'
+import photo2 from '../../images/sectionCarousel/sectionCarouselPhoto2.png'
+import photo3 from '../../images/sectionCarousel/sectionCarouselPhoto3.png'
+import photo4 from '../../images/sectionCarousel/sectionCarouselPhoto4.png'
+import photo5 from '../../images/sectionCarousel/sectionCarouselPhoto5.png'
+import photo6 from '../../images/sectionCarousel/sectionCarouselPhoto6.png'
+import photo7 from '../../images/sectionCarousel/sectionCarouselPhoto7.png'
+import photo8 from '../../images/sectionCarousel/sectionCarouselPhoto8.png'
+import photo9 from '../../images/sectionCarousel/sectionCarouselPhoto9.png'
 
 export const carouselPhotos: CarouselPhoto[] = [
     {

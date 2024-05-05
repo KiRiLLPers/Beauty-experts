@@ -1,5 +1,5 @@
 'use client'
-import {YMaps, Map, Placemark} from "@pbe/react-yandex-maps";
+import {YMaps, Map, Placemark, ZoomControl} from "@pbe/react-yandex-maps";
 import css from './SectionMap.module.scss'
 
 export const SectionMap = () => {
@@ -18,6 +18,7 @@ export const SectionMap = () => {
                             iconContent: address,
                         }}
                         options={{preset: 'islands#blackStretchyIcon'}}></Placemark>
+                    <ZoomControl/>
                 </Map>
             </YMaps>
         </div>

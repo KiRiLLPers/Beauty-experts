@@ -1,10 +1,10 @@
 import Image from "next/image";
-import photo1 from '../../../../public/images/sectionCosmetics/photo1.png'
-import photo2 from '../../../../public/images/sectionCosmetics/photo2.png'
+import photo1 from '../../../images/sectionCosmetics/sectionCosmeticsPhoto1.png'
+import photo2 from '../../../images/sectionCosmetics/sectionCosmeticsPhoto2.png'
 import css from './SectionCosmetics.module.scss'
 
 export const SectionCosmetics = () => {
-    return <section className={css.wrap}>
+    return <section className={css.wrap} id='cosmetics'>
         <h2 className={`font-felidae text-green text-48 leading-50 max-w-[652px] pb-[12px] xl-max:text-40 xl-max:leading-44 xl-max:pb-[8px] lg-max:text-28 lg-max:leading-32`}>У
             нас в салоне можно
             приобрести

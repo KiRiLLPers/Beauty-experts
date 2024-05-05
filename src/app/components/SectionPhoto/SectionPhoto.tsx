@@ -1,4 +1,4 @@
-import photo from '../../../../public/images/sectionPhoto/photo.png'
+import photo from '../../../images/sectionPhoto/sectionPhoto.png'
 import Image from "next/image";
 
 export const SectionPhoto = () => {

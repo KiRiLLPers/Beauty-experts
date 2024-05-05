@@ -3,7 +3,6 @@
 import Image from "next/image";
 import {Master} from "@/app/Types/Masters";
 import css from './TeamCard.module.scss';
-import {useEffect} from "react";
 
 type TeamCardProps = {
     master: Master | undefined;

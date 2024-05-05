@@ -1,18 +1,18 @@
 'use client'
 
-import React, {useEffect, useRef, useState} from 'react';
+import React from 'react';
 import styles from './SectionPortfolio.module.scss'
-import photo1 from '../../../../public/images/SectionPortfolio/photo1.png'
-import photo2 from '../../../../public/images/SectionPortfolio/photo2.png'
-import photo3 from '../../../../public/images/SectionPortfolio/photo3.png'
-import photo4 from '../../../../public/images/SectionPortfolio/photo4.png'
-import photo5 from '../../../../public/images/SectionPortfolio/photo5.png'
-import photo6 from '../../../../public/images/SectionPortfolio/photo6.png'
-import photo7 from '../../../../public/images/SectionPortfolio/photo7.png'
-import photo8 from '../../../../public/images/SectionPortfolio/photo8.png'
-import photo9 from '../../../../public/images/SectionPortfolio/photo9.png'
-import photo10 from '../../../../public/images/SectionPortfolio/photo10.png'
-import photo11 from '../../../../public/images/SectionPortfolio/photo11.png'
+import photo1 from '../../../images/sectionPortfolio/sectionPortfolioPhoto1.png'
+import photo2 from '../../../images/sectionPortfolio/sectionPortfolioPhoto2.png'
+import photo3 from '../../../images/sectionPortfolio/sectionPortfolioPhoto3.png'
+import photo4 from '../../../images/sectionPortfolio/sectionPortfolioPhoto4.png'
+import photo5 from '../../../images/sectionPortfolio/sectionPortfolioPhoto5.png'
+import photo6 from '../../../images/sectionPortfolio/sectionPortfolioPhoto6.png'
+import photo7 from '../../../images/sectionPortfolio/sectionPortfolioPhoto7.png'
+import photo8 from '../../../images/sectionPortfolio/sectionPortfolioPhoto8.png'
+import photo9 from '../../../images/sectionPortfolio/sectionPortfolioPhoto9.png'
+import photo10 from '../../../images/sectionPortfolio/sectionPortfolioPhoto10.png'
+import photo11 from '../../../images/sectionPortfolio/sectionPortfolioPhoto11.png'
 import Image from "next/image";
 
 export const SectionPortfolio = () => {

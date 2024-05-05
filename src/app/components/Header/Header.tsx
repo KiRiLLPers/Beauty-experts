@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import logo from '../../../../public/images/logo.svg'
+import logo from '../../../images/logo.svg'
 import css from "./Header.module.scss";
 import BurgerButton from "@/app/components/BurgerButton/BurgerButton";
 import {useEffect, useState} from "react";
@@ -22,10 +22,10 @@ const Header = () => {
     }, [isOpen]);
 
     const menuTab = [
-        ['Услуги', '/'],
-        ['Специалисты', '/'],
-        ['Продукция', '/'],
-        ['Контакты', '/']
+        ['Услуги', '/#services'],
+        ['Специалисты', '/#masters'],
+        ['Продукция', '/#cosmetics'],
+        ['Контакты', '/#footer']
     ]
 
     return (
@@ -66,11 +66,11 @@ const Header = () => {
                     {menuTab.map(([title, url], index) =>
                         <li
                             className={`${css.menuItem} ${isOpen ? css.open : ''} cursor-pointer font-felidae text-56 h-full leading-60 text-green lg-max:text-48 lg-max:leading-54 md-max:text-40 md-max:leading-44`}
-                            key={index}
+                            key={index} onClick={handleOpenMenu}
                         >
-                            {title}
+                            <Link href={url}>{title}</Link>
                         </li>)}
-                    <li className={``}></li>
+                    <li></li>
                 </ul>
             </div>
         </>

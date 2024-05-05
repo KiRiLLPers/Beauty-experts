@@ -1,16 +1,16 @@
 import css from './SectionMain.module.scss'
 import Image from "next/image";
 import SliderComponent from "../../components/Slider/Slider";
-import photo from "../../../../public/images/sectionMain/photo.png"
-import photo1 from "../../../../public/images/sectionMain/photo1.png"
-import photo2 from "../../../../public/images/sectionMain/photo2.png"
-import photo3 from "../../../../public/images/sectionMain/photo3.png"
-import photo4 from "../../../../public/images/sectionMain/photo4.png"
-import photo5 from "../../../../public/images/sectionMain/photo5.png"
-import photo6 from "../../../../public/images/sectionMain/photo6.png"
-import photo7 from "../../../../public/images/sectionMain/photo7.png"
-import photo8 from "../../../../public/images/sectionMain/photo8.png"
-import photo9 from "../../../../public/images/sectionMain/photo9.png"
+import photo from "../../../images/sectionMain/sectionMainPhoto.png"
+import photo1 from "../../../images/sectionMain/sectionMainPhoto1.png"
+import photo2 from "../../../images/sectionMain/sectionMainPhoto2.png"
+import photo3 from "../../../images/sectionMain/sectionMainPhoto3.png"
+import photo4 from "../../../images/sectionMain/sectionMainPhoto4.png"
+import photo5 from "../../../images/sectionMain/sectionMainPhoto5.png"
+import photo6 from "../../../images/sectionMain/sectionMainPhoto6.png"
+import photo7 from "../../../images/sectionMain/sectionMainPhoto7.png"
+import photo8 from "../../../images/sectionMain/sectionMainPhoto8.png"
+import photo9 from "../../../images/sectionMain/sectionMainPhoto9.png"
 
 export const SectionMain = () => {
     const photoLeft = [photo, photo1, photo2, photo7, photo8];

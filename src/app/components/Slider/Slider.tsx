@@ -2,8 +2,7 @@
 
 import Slider, {Settings} from "react-slick";
 import "slick-carousel/slick/slick.css";
-import styles from './Slider.module.scss'
-import React, {useRef} from "react";
+import React from "react";
 
 interface SliderComponentProps {
     className?: string;

@@ -2,7 +2,7 @@
 
 import css from './SectionMasters.module.scss'
 import SliderComponent from "@/app/components/Slider/Slider";
-import {masters} from "@/app/constants/masters";
+import {masters} from "../../constants/masters";
 import Image from "next/image";
 import {useEffect, useRef, useState} from "react";
 import Slider from "react-slick";
@@ -109,7 +109,7 @@ export const SectionMasters = () => {
                 }
             }]
     }
-    return <section className={css.wrap}>
+    return <section className={css.wrap} id='masters'>
         <p className={`font-felidae text-48 leading-50 text-green mb-[40px] xl-max:text-32 xl-max:leading-38 xl-max:mb-[32px] lg-max:text-20 lg-max:leading-26 lg-max:mb-[25px]`}>У
             нас
             работают топовые стилисты и
