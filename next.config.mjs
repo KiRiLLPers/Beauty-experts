@@ -12,18 +12,23 @@ const nextConfig = {
   },
   webpack: (config, options) => {
     config.module.rules.push({
-      test: /\.(png|jpe?g|gif|svg|woff|woff2|eot|ttf|otf)$/,
-      use: [
-        options.defaultLoaders.babel,
-        {
-          loader: 'url-loader',
-          options: {
-            limit: 8192,
-            name: '[name].[ext]',
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|eot|ttf|otf)$/,
+        use: [
+          options.defaultLoaders.babel,
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              name: '[name].[ext]',
+            },
           },
-        },
-      ],
-    });
+        ],
+      },
+      {
+        test: /\.css$/,
+        include: /[\\/]node_modules[\\/](slick-carousel)[\\/]/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      });
 
     return config;
   },

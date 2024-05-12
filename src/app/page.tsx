@@ -1,4 +1,7 @@
-import Image from "next/image";
+import 'slick-carousel/slick/slick.css';
+import 'swiper/swiper-bundle.css';
+import '@/app/globals.css';
+
 import {SectionMain} from "@/app/components/SectionMain/SectionMain";
 import {SectionAbout} from "@/app/components/SectionAbout/SectionAbout";
 import {SectionMasters} from "@/app/components/SectionMasters/SectionMasters";
