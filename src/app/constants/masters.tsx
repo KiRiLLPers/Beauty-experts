@@ -1,5 +1,4 @@
 import photo1 from '../../images/SectionMasters/irina.png'
-import photo2 from '../../images/SectionMasters/pershina.png'
 import photo3 from '../../images/SectionMasters/beiner.png'
 import photo4 from '../../images/SectionMasters/botchenko.png'
 import photo5 from '../../images/SectionMasters/hamaganova.png'
@@ -65,15 +64,6 @@ export const masters: Master[] = [
         experience: 'более 20 лет опыта',
         icon: hairdresser,
         photo: photo13
-    },
-    {
-        id: 6,
-        name: 'Вероника Першина',
-        profile: 'стилист',
-        description: 'На страже красивых и здоровых волос с 2019 года. Я владею множеством техник и стилей, включая классический AirTouch, балаяж, создание рельефных окрашиваний и создание красивых вкусных однотонных оттенков. Кроме того, я специализируюсь на создании чётких геометрических стрижек или объёмных и текстурных причёсок. Я помогу вам найти свой уникальный стиль и выбрать то, что отвечает потребностям вашей души.',
-        experience: '5 лет опыта',
-        icon: hairdresser,
-        photo: photo2,
     },
     {
         id: 7,
