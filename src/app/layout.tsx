@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import {className} from "postcss-selector-parser";
+import Footer from "@/app/components/Footer/Footer";
+import Header from "@/app/components/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,16 +17,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
+      <html lang="ru">
       <body className='bg-white h-screen '>
-        <div className='flex flex-col h-screen m-auto'>
-            <Header></Header>
-            <main className='flex-1'>
-                {children}
-            </main>
-            <Footer></Footer>
-        </div>
+      <div className='flex flex-col h-screen m-auto'>
+        <Header></Header>
+        <main className='flex-1'>
+          {children}
+        </main>
+        <Footer></Footer>
+      </div>
       </body>
-    </html>
+      </html>
   );
 }
