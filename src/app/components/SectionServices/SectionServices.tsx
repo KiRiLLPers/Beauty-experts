@@ -47,8 +47,9 @@ export const SectionServices = () => {
                 <li className={`font-felidae text-green text-36 leading-40 xl-max:text-24 xl-max:leading-28`}>{service.name}</li>
                 <li className={`text-grey text-14 leading-22 text-center`}>{service.text}</li>
                 <li>
-                    <button className={`text-14 leading-24 text-green`}><Link href={service.url}>ПОДРОБНЕЕ</Link>
-                    </button>
+                    <Link className={`text-14 leading-24 text-green`} href={service.url}>
+                        <button className={`text-14 leading-24 text-green`}>ПОДРОБНЕЕ</button>
+                    </Link>
                 </li>
             </ul>)}
         </div>
