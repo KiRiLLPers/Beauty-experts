@@ -1,0 +1,69 @@
+@import "src/scss/main";
+
+.wrap {
+  width: 100%;
+  height: 900px;
+  background-color: $green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: auto;
+  padding-bottom: 10px;
+
+  &:after {
+    content: '';
+    background-image: url("../../../images/footer/line2.png");
+    background-position: -150px -200px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  p {
+    max-width: 900px;
+    position: relative;
+    z-index: 200;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    overflow: auto;
+    display: flex;
+    gap: 10px;
+    z-index: 300;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .wrap {
+    height: 832px;
+
+    &:after {
+      background-position: -800px -300px;
+    }
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .wrap {
+    height: 560px;
+
+    &:after {
+      background-position: -1150px -1100px;
+    }
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .wrap {
+    height: 500px;
+    padding: 0 17px 10px 17px;
+  }
+}

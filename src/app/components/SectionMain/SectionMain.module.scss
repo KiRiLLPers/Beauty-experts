@@ -1,0 +1,133 @@
+@import "src/scss/main";
+
+.mainSection {
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+
+  h1 {
+    color: $green;
+    font-size: 140px;
+    line-height: 140px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.verticalSliderTop {
+  transform: translateY(-100px);
+  animation: scrollTop 13s linear infinite;
+  animation-delay: 2s;
+}
+
+.verticalSliderDown {
+  transform: translateY(-1520px);
+  animation: scrollDown 13s linear infinite;
+  animation-delay: 2s;
+}
+
+.slideInFromTop {
+  animation: slideInFromTop 2s ease-out forwards;
+}
+.slideInFromBottom {
+  animation: slideInFromBottom 2s ease-out forwards;
+}
+.fadeIn {
+  animation: fadeIn 3s ease-in forwards;
+}
+
+.slideRight {
+  animation: slideFromRight 1.5s linear forwards;
+}
+
+@keyframes scrollTop {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-1720px);
+  }
+}
+
+@keyframes scrollDown {
+  0%  {
+    transform: translateY(-1520px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .verticalSliderTop {
+    transform: translateY(-80px);
+    animation: scrollTop 5s linear infinite;
+  }
+  .verticalSliderDown {
+    transform: translateY(-1500px);
+    animation: scrollDown 5s linear infinite;
+  }
+
+  @keyframes scrollTop {
+    0% {
+      transform: translateY(-80px);
+    }
+    100% {
+      transform: translateY(-1560px);
+    }
+  }
+
+  @keyframes scrollDown {
+    0%  {
+      transform: translateY(-1480px);
+    }
+    100% {
+      transform: translateY(80px);
+    }
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .mainSection {
+    padding: 16px;
+  }
+}

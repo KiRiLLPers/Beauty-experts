@@ -1,0 +1,41 @@
+@import "src/scss/main";
+
+.wrap {
+  padding: 64px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 100%;
+    height: 706px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .wrap {
+    div {
+      height: 520px;
+    }
+  }
+}
+
+@media (max-width: 743px) {
+  .wrap {
+    padding: 40px 16px 16px 16px;
+
+    div {
+      height: 456px;
+    }
+  }
+}
+
+@media (max-width: 429px) {
+  .wrap {
+    div {
+      height: 320px;
+    }
+  }
+}
+

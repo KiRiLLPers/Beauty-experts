@@ -1,0 +1,15 @@
+.custom-class {
+  /* Стилизация для кнопок */
+  position: absolute;
+  top: 0;
+}
+
+.custom-class.nextArrow {
+  /* Стили для кнопки "Next" */
+  right: 0;
+}
+
+.custom-class.prevArrow {
+  /* Стили для кнопки "Prev" */
+  left: 0;
+}
