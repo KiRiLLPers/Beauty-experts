@@ -7,19 +7,19 @@ type Props = {
     }
 }
 
-// export function generateStaticParams() {
-//     const services = [
-//         {url: '/service/hairdressing'},
-//         {url: '/service/manicure'},
-//         {url: '/service/makeup'},
-//         {url: '/service/cosmetology-massage'},
-//     ];
-//     return services.map(service => {
-//         // Возьмём id из URL, отрезав "/service/"
-//         const id = service.url.slice(9);
-//         return {id}
-//     });
-// }
+export function generateStaticParams() {
+    const services = [
+        {url: '/service/hairdressing'},
+        {url: '/service/manicure'},
+        {url: '/service/makeup'},
+        {url: '/service/cosmetology-massage'},
+    ];
+    return services.map(service => {
+        // Возьмём id из URL, отрезав "/service/"
+        const id = service.url.slice(9);
+        return {id}
+    });
+}
 
 export default function Service({params: {id}}: any) {
     return <>
