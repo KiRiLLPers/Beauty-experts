@@ -123,6 +123,7 @@ export const SectionMasters = () => {
                     return <ul key={index}>
                         <li className={`m-[10px] lg-max:m-[5px]`}>
                             <Image
+                                loading={'lazy'}
                                 src={master.photo}
                                 alt={'photo'}
                                 className={`

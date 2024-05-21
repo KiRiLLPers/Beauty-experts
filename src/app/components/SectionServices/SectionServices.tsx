@@ -42,7 +42,7 @@ export const SectionServices = () => {
             услуги</h2>
         <div>
             {services.map((service, index) => <ul key={index}>
-                <Image src={service.icon} alt={service.name}
+                <Image src={service.icon} alt={service.name} loading={'lazy'}
                        className={`w-[36px] h-[36px] xl-max:w-[26px] xl-max:h-[26px]`}></Image>
                 <li className={`font-felidae text-green text-36 leading-40 xl-max:text-24 xl-max:leading-28`}>{service.name}</li>
                 <li className={`text-grey text-14 leading-22 text-center`}>{service.text}</li>

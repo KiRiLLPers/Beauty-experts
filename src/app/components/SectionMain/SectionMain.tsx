@@ -110,6 +110,7 @@ export const SectionMain = () => {
                         <SliderComponent className={`flex flex-col`} settings={leftVerticalSettings}>
                             {upperPhotos.map((photo, index) =>
                                 <Image
+                                    loading={'lazy'}
                                     key={index}
                                     className={`object-cover block min-w-[224px] h-[280px] my-[22px] box-border 2xl-max:my-[12px]`}
                                     src={photo}
@@ -120,6 +121,7 @@ export const SectionMain = () => {
                         <SliderComponent className={`flex flex-col`} settings={rightVerticalSettings}>
                             {lowerPhotos.map((photo, index) =>
                                 <Image
+                                    loading={'lazy'}
                                     key={index}
                                     className={`object-cover block min-w-[224px] h-[280px] my-[22px] box-border 2xl-max:my-[12px]`}
                                     src={photo}
@@ -134,6 +136,7 @@ export const SectionMain = () => {
                 <SliderComponent settings={upperHorizontalSettings}>
                     {upperPhotos.map((photo, index) =>
                         <Image
+                            loading={'lazy'}
                             key={index}
                             src={photo}
                             alt={`photo${index}`}
@@ -144,6 +147,7 @@ export const SectionMain = () => {
                 <SliderComponent settings={lowerHorizontalSettings}>
                     {lowerPhotos.map((photo, index) =>
                         <Image
+                            loading={'lazy'}
                             key={index}
                             src={photo}
                             alt={`photo${index}`}

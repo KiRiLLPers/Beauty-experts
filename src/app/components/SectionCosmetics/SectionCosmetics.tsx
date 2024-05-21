@@ -23,7 +23,7 @@ export const SectionCosmetics = () => {
                     ухода за
                     волосами и кожей, основанные на масле
                     арганы. Все средства бренда не имеют в составе хлорида натрия, фосфатов, сульфатов и парабенов.</p>
-                <Image src={photo1} alt={'photo'} className={`xl-max:w-[186px]`}></Image>
+                <Image src={photo1} alt={'photo'} className={`xl-max:w-[186px]`} loading={'lazy'}></Image>
             </li>
             <li>
                 <h3 className={`font-felidae text-green text-64 leading-70 pb-[8px] 2xl-max:text-56 2xl-max:leading-60 xl-max:text-40 xl-max:leading-44 `}>Evo</h3>
@@ -31,7 +31,7 @@ export const SectionCosmetics = () => {
                     косметика для ухода за
                     волосами, лицом и телом — простая и эффективная в
                     использовании. Бренд EVO популярен среди людей, которые бережно относятся к своему здоровью.</p>
-                <Image src={photo2} alt={'photo'} className={`xl-max:w-[186px]`}></Image>
+                <Image src={photo2} alt={'photo'} className={`xl-max:w-[186px]`} loading={'lazy'}></Image>
             </li>
         </ul>
     </section>

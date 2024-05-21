@@ -44,7 +44,7 @@ const Header = () => {
                         <BurgerButton isOpen={isOpen} handleOpenMenu={handleOpenMenu}></BurgerButton>
                     </div>
                     <div className='flex-1 ml-[40px] xl-max:ml-0 xl-max:flex xl-max:justify-center'>
-                        <Image src={logo} alt='logo'
+                        <Image src={logo} alt='logo' loading={'lazy'}
                                className='object-cover cursor-pointer lg-max:ml-7 md-max:w-[112px]'></Image>
                     </div>
                     <ul className='flex gap-x-[16px] items-center lg-max:gap-x-[8px]'>
