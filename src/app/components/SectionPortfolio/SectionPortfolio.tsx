@@ -25,7 +25,7 @@ export const SectionPortfolio = () => {
             яркие
             доказательства этого</p>
         <div>
-            {portfolioPhotos.map((photo, index) => <Image src={photo} alt={`photo`} key={index}></Image>)}
+            {portfolioPhotos.map((photo, index) => <Image loading={'lazy'} src={photo} alt={`photo`} key={index}></Image>)}
         </div>
     </section>
 }

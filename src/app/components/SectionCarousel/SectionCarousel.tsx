@@ -42,7 +42,7 @@ export const SectionCarousel = () => {
                 }
             >
                 {carouselPhotos.map((el, index) => <SwiperSlide key={index}>
-                    <Image src={el.photo} alt={el.text} className={`w-full h-full object-contain`}></Image>
+                    <Image src={el.photo} alt={el.text} className={`w-full h-full object-contain`} loading={'lazy'}></Image>
                     <p className={`pt-[12px] text-14 leading-22 text-grey`}>{el.text}</p>
                 </SwiperSlide>)}
             </Swiper>

@@ -61,7 +61,7 @@ export default function SectionMain({id}: SectionMainProps) {
             <div>
                 <p className={`max-w-[397px] text-grey text-16 leading-24 xl-max:text-14 xl-max:leading-22 xl-max:max-w-[220px] lg-max:max-w-[300px]`}>{content[id].description}</p>
                 {content[id].photos.map((photo: StaticImageData, index: number) => {
-                    return <Image key={index} src={photo} alt={'photo'} className={`${index === 0
+                    return <Image loading={'lazy'} key={index} src={photo} alt={'photo'} className={`${index === 0
                         ? '2xl-max:w-[304px] 2xl-max:h-[200px] xl-max:w-[166px] xl-max:h-[130px] lg-max:w-[128px] lg-max:h-[85px] md-max:w-[102px] md-max:h-[68px]'
                         : index === 1
                             ? '2xl-max:w-[140px] 2xl-max:h-[140px] xl-max:w-[100px] xl-max:h-[100px] lg-max:w-[64px] lg-max:h-[64px] md-max:w-[50px] md-max:h-[50px]'
