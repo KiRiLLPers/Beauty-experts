@@ -69,7 +69,7 @@ export const priceTable: Record<string, any> = {
                 service: 'Стрижка женская',
                 top: '5 500 — 7 000 р.',
                 stylist: '3 500 р.',
-                expert: '3 000 р.'
+                expert: '3 500 р.'
             },
             {
                 service: 'Укладка',
@@ -103,9 +103,9 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Химическая завивка',
-                top: '',
-                stylist: '9 000 — 13 000 р.',
-                expert: ''
+                top: '15 000 р.',
+                stylist: '13 000 р.',
+                expert: '10 000 р.'
             },
             {
                 service: 'Окраска кавер',

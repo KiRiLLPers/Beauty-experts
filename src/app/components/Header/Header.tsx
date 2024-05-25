@@ -54,8 +54,9 @@ const Header = () => {
                         <li className='w-[40px] h-[40px] flex justify-center items-center bg-soft-light2 rounded-[100px] lg-max:w-[32px] lg-max:h-[32px]'>
                             <a className={`${css.instagram} lg-max:w-[16px] lg-max:h-[16px]`} href='/'></a>
                         </li>
-                        <li className='w-[40px] h-[40px] flex justify-center items-center bg-soft-light2 rounded-[100px] lg-max:w-[32px] lg-max:h-[32px]'>
-                            <a className={`${css.whatsApp} lg-max:w-[16px] lg-max:h-[16px]`} href='/'></a>
+                        <li className='w-[40px] h-[40px] flex justify-center items-center bg-soft-light2 rounded-[100px] lg-max:w-[32px] lg-max:h-[32px] cursor-pointer'>
+                            <a className={`${css.whatsApp} lg-max:w-[16px] lg-max:h-[16px]`}
+                               href='https://wa.me/79139852373'></a>
                         </li>
                     </ul>
                 </div>
