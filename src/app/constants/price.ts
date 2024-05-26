@@ -321,7 +321,7 @@ export const priceTable: Record<string, any> = {
                 price: '100 — 500 р.',
             },
             {
-                service: 'маникюр',
+                service: 'педикюр',
                 section: true,
             },
             {
