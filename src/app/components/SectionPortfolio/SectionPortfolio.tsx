@@ -13,7 +13,6 @@ import photo8 from '../../../images/sectionPortfolio/sectionPortfolioPhoto8.png'
 import photo9 from '../../../images/sectionPortfolio/sectionPortfolioPhoto9.png'
 import photo10 from '../../../images/sectionPortfolio/sectionPortfolioPhoto10.png'
 import photo11 from '../../../images/sectionPortfolio/sectionPortfolioPhoto11.png'
-import Image from "next/image";
 
 export const SectionPortfolio = () => {
     const portfolioPhotos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11];
@@ -24,8 +23,8 @@ export const SectionPortfolio = () => {
             наши работы —
             яркие
             доказательства этого</p>
-        <div>
-            {portfolioPhotos.map((photo, index) => <Image loading={'lazy'} src={photo} alt={`photo`} key={index}></Image>)}
-        </div>
+        {/*<div>*/}
+        {/*    {portfolioPhotos.map((photo, index) => <Image loading={'lazy'} src={photo} alt={`photo`} key={index}></Image>)}*/}
+        {/*</div>*/}
     </section>
 }

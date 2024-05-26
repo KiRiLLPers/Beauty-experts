@@ -52,11 +52,13 @@ const Header = () => {
                             <a href="tel:+79139852373" className='text-16 leading-26'>+79139852373</a>
                         </li>
                         <li className='w-[40px] h-[40px] flex justify-center items-center bg-soft-light2 rounded-[100px] lg-max:w-[32px] lg-max:h-[32px]'>
-                            <a className={`${css.instagram} lg-max:w-[16px] lg-max:h-[16px]`} href='/'></a>
+                            <a className={`${css.instagram} lg-max:w-[16px] lg-max:h-[16px]`}
+                               href='https://www.instagram.com/beauty__experts?igsh=bHQ1Mmdia3ExMW00&utm_source=qr'
+                               target={'_blank'}></a>
                         </li>
                         <li className='w-[40px] h-[40px] flex justify-center items-center bg-soft-light2 rounded-[100px] lg-max:w-[32px] lg-max:h-[32px] cursor-pointer'>
                             <a className={`${css.whatsApp} lg-max:w-[16px] lg-max:h-[16px]`}
-                               href='https://wa.me/79139852373'></a>
+                               href='https://wa.me/79139852373' target={'_blank'}></a>
                         </li>
                     </ul>
                 </div>
