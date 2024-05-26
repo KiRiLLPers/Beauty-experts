@@ -26,8 +26,11 @@ const Footer = () => {
                 <ul className='flex flex-col gap-[8px]'>
                     <p className='text-16 text-grey uppercase mb-[8px] xl-max:text-14 xl-max:leading-24'>социальные
                         сети</p>
-                    <li className='font-felidae text-32 leading-36 text-white xl-max:text-24 xl-max:leading-30'>Instagram</li>
-                    <li className='font-felidae text-32 leading-36 text-white xl-max:text-24 xl-max:leading-30'>WhatsApp</li>
+                    <li className='font-felidae text-32 leading-36 text-white xl-max:text-24 xl-max:leading-30 cursor-pointer hover:opacity-70'>
+                        <a href='https://www.instagram.com/beauty__experts?igsh=bHQ1Mmdia3ExMW00&utm_source=qr'
+                           target={'_blank'}>Instagram</a></li>
+                    <li className='font-felidae text-32 leading-36 text-white xl-max:text-24 xl-max:leading-30 cursor-pointer hover:opacity-70'>
+                        <a href='https://wa.me/79139852373' target={'_blank'}>WhatsApp</a></li>
                 </ul>
                 <ul className='max-w-[240px]'>
                     <p className='text-16 text-grey uppercase mb-[16px] xl-max:text-14 xl-max:leading-24'>адрес</p>
@@ -37,7 +40,8 @@ const Footer = () => {
                 </ul>
                 <ul>
                     <p className='text-16 text-grey uppercase mb-[16px] xl-max:text-14 xl-max:leading-24'>телефон</p>
-                    <li className='font-felidae text-32 leading-36 text-white xl-max:text-24 xl-max:leading-30'>+79139852373</li>
+                    <li className='font-felidae text-32 leading-36 text-white xl-max:text-24 xl-max:leading-30 cursor-pointer hover:opacity-70'>
+                        <a href="tel:+79139852373">+79139852373</a></li>
                 </ul>
             </div>
             <div className={`lg-min:hidden grid w-full grid-cols-2 grid-rows-3 gap-[40px]`}>
@@ -52,8 +56,11 @@ const Footer = () => {
                 <ul className='flex flex-col gap-[8px]'>
                     <p className='text-grey uppercase mb-[8px] text-12 leading-22'>социальные
                         сети</p>
-                    <li className='font-felidae text-18 leading-20 text-white'>Instagram</li>
-                    <li className='font-felidae text-18 leading-20 text-white'>WhatsApp</li>
+                    <li className='font-felidae text-18 leading-20 text-white cursor-pointer hover:opacity-70'><a
+                        href='https://www.instagram.com/beauty__experts?igsh=bHQ1Mmdia3ExMW00&utm_source=qr'
+                        target={'_blank'}>Instagram</a></li>
+                    <li className='font-felidae text-18 leading-20 text-white cursor-pointer hover:opacity-70'><a
+                        href='https://wa.me/79139852373' target={'_blank'}>WhatsApp</a></li>
                 </ul>
                 <ul className='max-w-[240px]'>
                     <p className='text-grey uppercase mb-[8px] text-12 leading-22'>адрес</p>
@@ -63,7 +70,8 @@ const Footer = () => {
                 </ul>
                 <ul>
                     <p className='text-grey uppercase mb-[8px] text-12 leading-22'>телефон</p>
-                    <li className='font-felidae text-18 leading-20 text-white'>+79139852373</li>
+                    <li className='font-felidae text-18 leading-20 text-white '><a
+                        href="tel:+79139852373">+79139852373</a></li>
                 </ul>
             </div>
         </footer>
