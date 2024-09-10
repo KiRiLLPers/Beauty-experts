@@ -86,7 +86,7 @@ export const priceTable: Record<string, any> = {
             {
                 service: 'Прическа на длинные волосы',
                 top: '4 500 р.',
-                stylist: '3 000 р. - 3 500 р.',
+                stylist: '3 000 - 3 500 р.',
                 expert: ''
             },
             {
@@ -104,7 +104,7 @@ export const priceTable: Record<string, any> = {
             {
                 service: 'Химическая завивка',
                 top: '',
-                stylist: '10 000 р. - 15 000 р.',
+                stylist: '10 000 - 15 000 р.',
                 expert: ''
             },
             {
@@ -116,7 +116,7 @@ export const priceTable: Record<string, any> = {
             {
                 service: 'Стрижка детская',
                 top: '2 500 р.',
-                stylist: '1 500 р. - 2 000 р.',
+                stylist: '1 500 - 2 000 р.',
                 expert: '1 500 р.'
             },
             {
@@ -292,17 +292,13 @@ export const priceTable: Record<string, any> = {
                 service: 'Массаж рук (15 мин.)',
                 price: '300 р.',
             },
-            // {
-            //     service: 'Парафиновая ванночка',
-            //     price: '200 р.',
-            // },
             {
                 service: 'Крем + парафин',
                 price: '600 р.',
             },
             {
                 service: 'SPA-уход',
-                price: '600 р. - 1 000 р.',
+                price: '600 - 1 000 р.',
             },
             {
                 service: 'Покрытие гель-лаком “Французский маникюр',
@@ -330,7 +326,7 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Педикюр мужской',
-                price: '3 000 р. - 3 200 р.',
+                price: '3 000 - 3 200 р.',
             },
             {
                 service: 'Обработка ногтей',
