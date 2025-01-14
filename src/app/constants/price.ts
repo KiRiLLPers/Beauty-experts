@@ -121,7 +121,7 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Стрижка мужская',
-                top: '3 500 р.',
+                top: '3 500 - 4 000 р.',
                 stylist: '2 000 р.',
                 expert: '2 000 р.'
             },
@@ -177,13 +177,13 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Среднее',
-                top: '6 000 — 7 000 р.',
+                top: '6 000 — 8 000 р.',
                 stylist: '5 500 р.',
                 expert: '5 000 р.'
             },
             {
                 service: 'Длинное',
-                top: '7 000 — 8 000 р.',
+                top: '7 000 — 9 000 р.',
                 stylist: '6 000 р.',
                 expert: '5 500 р.'
             },
@@ -201,7 +201,7 @@ export const priceTable: Record<string, any> = {
                     field: "daria",
                 },
                 {
-                    title: "софия осадчая",
+                    title: "сабрина гафари",
                     field: "sofia",
                 },
             ],
@@ -217,11 +217,11 @@ export const priceTable: Record<string, any> = {
                 daria: '11 000 — 13 000 р.',
                 sofia: ''
             },
-            {
-                service: 'Оформление бровей',
-                daria: '',
-                sofia: '1 000 — 2 000 р.'
-            },
+            // {
+            //     service: 'Оформление бровей',
+            //     daria: '',
+            //     sofia: '1 000 — 2 000 р.'
+            // },
             {
                 service: 'Урок для себя',
                 daria: '18 000 - 20 000 р.',
@@ -242,8 +242,12 @@ export const priceTable: Record<string, any> = {
                     field: "service",
                 },
                 {
-                    title: "цена",
-                    field: "price",
+                    title: "топ-стилист / стилист",
+                    field: "top",
+                },
+                {
+                    title: "молодой эксперт",
+                    field: "expert",
                 },
             ]
         },
@@ -254,67 +258,93 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Экспресс маникюр (подпиливание с покрытием)',
-                price: '600 р.',
+                top: '600 р.',
+                expert: '600 р.'
             },
             {
                 service: 'Маникюр (европейский)',
-                price: '1 500 — 1 700 р.',
+                top: '1 700 р. / 1 500 р.',
+                expert: '800 р.'
             },
             {
                 service: 'Покрытие (основа + лак закрепитель) / лечение',
-                price: '300 — 500 р.',
+                top: '500 р. / 300 р.',
+                expert: '300 р.'
             },
             {
                 service: 'Покрытие гель-лаком',
-                price: '1 000 р.',
+                top: '1 000 р.',
+                expert: '1 000 р.',
             },
             {
                 service: 'Покрытие гель-лаком с выравниваемой базой',
-                price: '1 500 р.',
+                top: '1 500 р. / 1 200 р.',
+                expert: '1 200 р.',
             },
             {
                 service: 'Наращивание ногтей',
-                price: '3 000 р.',
+                top: '5 000 р.',
+                expert: '3 000 р.',
             },
             {
                 service: 'Укрепление натуральных ногтей жестким гелем',
-                price: '1 500 р.',
+                top: '1 500 р. / 1 200 р.',
+                expert: '1 200 р.',
             },
             {
                 service: 'Снятие гель-лака',
-                price: '300 р.',
+                top: '300 р.',
+                expert: '200 р.',
             },
             {
                 service: 'Снятие лака',
-                price: '50 р.',
+                top: '50 р.',
+                expert: '50 р.',
+            },
+            {
+                service: 'Снятие нарощенных ногтей',
+                top: '1000 р.',
+                expert: '600 р.',
+            },
+            {
+                service: 'Полировка ногтей с воском',
+                top: '300 р.',
+                expert: '300 р.',
             },
             {
                 service: 'Массаж рук (15 мин.)',
-                price: '300 р.',
+                top: '300 р.',
+                expert: '300 р.',
             },
-            {
-                service: 'Крем + парафин',
-                price: '600 р.',
-            },
+            // {
+            //     service: 'Крем + парафин',
+            //     top: '600 р. - 1 000 р.',
+            //     expert: '600 р. - 1 000 р.',
+            // },
             {
                 service: 'SPA-уход',
-                price: '600 - 1 000 р.',
+                top: '600 - 1 000 р.',
+                expert: '600 - 1 000 р.',
             },
             {
                 service: 'Покрытие гель-лаком “Французский маникюр',
-                price: '1 500 р.',
+                top: '1 500 р.',
+                expert: '1 300 р.',
             },
             {
                 service: 'Стемпинг',
-                price: 'от 50 р.',
+                top: 'от 50 р.',
+                expert: '',
             },
             {
                 service: 'Градиент',
-                price: '100 — 1 000 р.',
+                top: '100 — 1 000 р.',
+                expert: '',
             },
             {
                 service: 'Втирка пигментами',
-                price: '100 — 500 р.',
+                top: '100 — 500 р.',
+                expert: '',
             },
             {
                 service: 'педикюр',
@@ -322,51 +352,73 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Педикюр',
-                price: '3 000 — 3 200 р.',
+                top: '3 200 р. / 3 000 р.',
+                expert: '2200 р.',
             },
             {
                 service: 'Педикюр мужской',
-                price: '3 000 - 3 200 р.',
+                top: '3 200 р. / 3 000 р.',
+                expert: '2200 р.',
             },
             {
                 service: 'Обработка ногтей',
-                price: '2 000 р.',
+                top: '2 000 р.',
+                expert: '1500 р.',
             },
             {
                 service: 'Обработка ступней',
-                price: '2 000 р.',
+                top: '2 000 р.',
+                expert: '1500 р.',
             },
             {
                 service: 'Обработка одного вросшего ногтя',
-                price: '250 р.',
+                top: '500 р.',
+                expert: '',
+            },
+            {
+                service: 'Полировка ногтей воском',
+                top: '300 р.',
+                expert: '300 р.',
             },
             {
                 service: 'Массаж ног (15 мин.)',
-                price: '300 р.',
+                top: '300 р.',
+                expert: '',
             },
             {
                 service: 'Массаж ног (30 мин.)',
-                price: '600 р.',
+                top: '600 р.',
+                expert: '',
             },
             {
                 service: 'SPA-уход',
-                price: '500 р.',
-            },
-            {
-                service: 'B/s пластина',
-                price: '1 500 р.',
+                top: '600 - 1 000 р.',
+                expert: '',
             },
             {
                 service: 'Титановая нить',
-                price: '3 500 р.',
+                top: '3 500 р.',
+                expert: '',
             },
             {
-                service: 'Скоба Фреза',
-                price: '3 500 р.',
+                service: 'Скоба Фрезера',
+                top: '4 000 р.',
+                expert: '',
             },
             {
                 service: 'Протезирование одного ногтя',
-                price: '200 — 500 р.',
+                top: '200 — 500 р.',
+                expert: '',
+            },
+            {
+                service: 'Обработка глубоких трещин с тейповым фиксатором 1шт',
+                top: '500 р.',
+                expert: '',
+            },
+            {
+                service: 'Переустановка корректирующих систем каждый месяц',
+                top: '1 000 р.',
+                expert: '',
             },
         ]
     }
