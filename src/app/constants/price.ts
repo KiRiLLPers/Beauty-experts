@@ -258,27 +258,27 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Экспресс маникюр (подпиливание с покрытием)',
-                top: '600 р.',
+                top: '1 000 р.',
                 expert: '600 р.'
             },
             {
                 service: 'Маникюр (европейский)',
-                top: '1 700 р. / 1 500 р.',
+                top: '1 800 р. / 1 500 р.',
                 expert: '800 р.'
             },
             {
                 service: 'Покрытие (основа + лак закрепитель) / лечение',
-                top: '500 р. / 300 р.',
-                expert: '300 р.'
+                top: '700 р. / 500 р.',
+                expert: '500 р.'
             },
             {
                 service: 'Покрытие гель-лаком',
-                top: '1 000 р.',
-                expert: '1 000 р.',
+                top: '1 200 р.',
+                expert: '1 200 р.',
             },
             {
                 service: 'Покрытие гель-лаком с выравниваемой базой',
-                top: '1 500 р. / 1 200 р.',
+                top: '1 700 р. / 1 200 р.',
                 expert: '1 200 р.',
             },
             {
@@ -288,7 +288,7 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Укрепление натуральных ногтей жестким гелем',
-                top: '1 500 р. / 1 200 р.',
+                top: '1 700 р. / 1 200 р.',
                 expert: '1 200 р.',
             },
             {
@@ -308,12 +308,12 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Полировка ногтей с воском',
-                top: '300 р.',
-                expert: '300 р.',
+                top: '500 р.',
+                expert: '500 р.',
             },
             {
                 service: 'Массаж рук (15 мин.)',
-                top: '300 р.',
+                top: '500 р.',
                 expert: '300 р.',
             },
             // {
@@ -328,8 +328,8 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Покрытие гель-лаком “Французский маникюр',
-                top: '1 500 р.',
-                expert: '1 300 р.',
+                top: '1 700 р.',
+                expert: '1 500 р.',
             },
             {
                 service: 'Стемпинг',
@@ -352,22 +352,22 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Педикюр',
-                top: '3 200 р. / 3 000 р.',
-                expert: '2200 р.',
+                top: '3 500 р. / 3 200 р.',
+                expert: '2700 р.',
             },
             {
                 service: 'Педикюр мужской',
-                top: '3 200 р. / 3 000 р.',
-                expert: '2200 р.',
+                top: '3 500 р. / 3 200 р.',
+                expert: '2700 р.',
             },
             {
                 service: 'Обработка ногтей',
-                top: '2 000 р.',
+                top: '2 300 р. / 2 100 р.',
                 expert: '1500 р.',
             },
             {
                 service: 'Обработка ступней',
-                top: '2 000 р.',
+                top: '2 300 р. / 2 100 р.',
                 expert: '1500 р.',
             },
             {
@@ -382,12 +382,12 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Массаж ног (15 мин.)',
-                top: '300 р.',
+                top: '500 р.',
                 expert: '',
             },
             {
                 service: 'Массаж ног (30 мин.)',
-                top: '600 р.',
+                top: '1000 р.',
                 expert: '',
             },
             {
