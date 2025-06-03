@@ -98,7 +98,7 @@ export const priceTable: Record<string, any> = {
             {
                 service: 'Шатуш/Айртач',
                 top: '',
-                stylist: '7 000 — 9 000 р.',
+                stylist: '7 500 — 9 500 р.',
                 expert: ''
             },
             {
@@ -137,26 +137,26 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Короткое',
-                top: '5 000 — 6 000 р.',
-                stylist: '4 500 р.',
+                top: '5 500 — 6 000 р.',
+                stylist: '5 000 р.',
                 expert: '4 000 р.'
             },
             {
                 service: 'Среднее',
-                top: '5 500 — 7 000 р.',
-                stylist: '5 000 р.',
+                top: '6 000 — 7 000 р.',
+                stylist: '5 500 р.',
                 expert: '4 500 р.'
             },
             {
                 service: 'Длинное',
-                top: '6 500 — 8 000 р.',
-                stylist: '5 500 р.',
+                top: '7 000 — 8 000 р.',
+                stylist: '6 000 р.',
                 expert: '5 000 р.'
             },
             {
                 service: 'Сложное',
-                top: '8 000 — 10 000 р.',
-                stylist: '6 500 р.',
+                top: '8 500 — 10 000 р.',
+                stylist: '7 000 р.',
                 expert: '5 500 р.'
             },
             {
@@ -165,26 +165,26 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Частичное',
-                top: '4 500 — 6 000 р.',
-                stylist: '4 000 р.',
+                top: '5 000 — 6 000 р.',
+                stylist: '4 500 р.',
                 expert: '3 500 р.'
             },
             {
                 service: 'Короткое',
-                top: '5 500 — 6 000 р.',
-                stylist: '4 500 р.',
+                top: '6 000 — 6 500 р.',
+                stylist: '5 000 р.',
                 expert: '4 000 р.'
             },
             {
                 service: 'Среднее',
-                top: '6 000 — 8 000 р.',
-                stylist: '5 500 р.',
+                top: '6 500 — 8 000 р.',
+                stylist: '6 000 р.',
                 expert: '5 000 р.'
             },
             {
                 service: 'Длинное',
-                top: '7 000 — 9 000 р.',
-                stylist: '6 000 р.',
+                top: '7 500 — 9 000 р.',
+                stylist: '6 500 р.',
                 expert: '5 500 р.'
             },
         ]
@@ -209,13 +209,13 @@ export const priceTable: Record<string, any> = {
         data: [
             {
                 service: 'Макияж',
-                daria: '8 000 — 10 000 р.',
-                sofia: '4 500 — 6 000 р.'
+                daria: '9 000 — 10 000 р.',
+                sofia: '5 000 р.'
             },
             {
                 service: 'Образ',
-                daria: '11 000 — 13 000 р.',
-                sofia: ''
+                daria: '12 000 — 13 000 р.',
+                sofia: '7 000 р.'
             },
             // {
             //     service: 'Оформление бровей',
@@ -224,7 +224,7 @@ export const priceTable: Record<string, any> = {
             // },
             {
                 service: 'Урок для себя',
-                daria: '18 000 - 20 000 р.',
+                daria: '20 000 р.',
                 sofia: ''
             },
             {
