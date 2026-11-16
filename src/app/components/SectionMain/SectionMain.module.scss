@@ -17,16 +17,30 @@
   }
 }
 
-.verticalSliderTop {
-  transform: translateY(-100px);
-  animation: scrollTop 13s linear infinite;
-  animation-delay: 2s;
+.verticalTrack {
+  animation: scrollUp 17.5s linear infinite;
 }
 
-.verticalSliderDown {
-  transform: translateY(-1520px);
-  animation: scrollDown 13s linear infinite;
-  animation-delay: 2s;
+.horizontalTrack {
+  animation: scrollLeft 17.5s linear infinite;
+}
+
+.verticalTrack:last-child,
+.horizontalTrack:first-child {
+  animation-direction: reverse;
+}
+
+.verticalTrack,
+.horizontalTrack {
+  @media (hover: hover) {
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }
 
 .slideInFromTop {
@@ -43,21 +57,15 @@
   animation: slideFromRight 1.5s linear forwards;
 }
 
-@keyframes scrollTop {
-  0% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(-1720px);
+@keyframes scrollUp {
+  to {
+    transform: translateY(-50%);
   }
 }
 
-@keyframes scrollDown {
-  0%  {
-    transform: translateY(-1520px);
-  }
-  100% {
-    transform: translateY(100px);
+@keyframes scrollLeft {
+  to {
+    transform: translateX(-50%);
   }
 }
 
@@ -94,35 +102,6 @@
   100% {
     transform: translateX(0);
     opacity: 1;
-  }
-}
-
-@media screen and (max-width: 1439px) {
-  .verticalSliderTop {
-    transform: translateY(-80px);
-    animation: scrollTop 5s linear infinite;
-  }
-  .verticalSliderDown {
-    transform: translateY(-1500px);
-    animation: scrollDown 5s linear infinite;
-  }
-
-  @keyframes scrollTop {
-    0% {
-      transform: translateY(-80px);
-    }
-    100% {
-      transform: translateY(-1560px);
-    }
-  }
-
-  @keyframes scrollDown {
-    0%  {
-      transform: translateY(-1480px);
-    }
-    100% {
-      transform: translateY(80px);
-    }
   }
 }
 

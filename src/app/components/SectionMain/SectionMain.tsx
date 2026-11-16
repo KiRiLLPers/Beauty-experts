@@ -1,6 +1,5 @@
 import css from './SectionMain.module.scss'
 import Image from "next/image";
-import SliderComponent from "../../components/Slider/Slider";
 import photo from "../../../images/sectionMain/sectionMainPhoto.png"
 import photo1 from "../../../images/sectionMain/sectionMainPhoto1.png"
 import photo2 from "../../../images/sectionMain/sectionMainPhoto2.png"
@@ -15,74 +14,7 @@ import photo9 from "../../../images/sectionMain/sectionMainPhoto9.png"
 export const SectionMain = () => {
     const photoLeft = [photo, photo1, photo2, photo7, photo8];
     const photoRight = [photo3, photo4, photo5, photo6, photo9];
-    const upperPhotos = [...photoLeft, ...photoLeft];
-    const lowerPhotos = [...photoRight, ...photoRight];
-
-    const lowerHorizontalSettings = {
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 3500,
-        autoplaySpeed: 100,
-        cssEase: "linear",
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    };
-
-    const upperHorizontalSettings = {
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 3500,
-        autoplaySpeed: 100,
-        cssEase: "linear",
-        arrows: false,
-        rtl: true,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    };
-
-    const leftVerticalSettings = {
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 3500,
-        autoplaySpeed: 100,
-        cssEase: "linear",
-        vertical: true,
-        arrows: false,
-    };
-
-    const rightVerticalSettings = {
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 3500,
-        autoplaySpeed: 100,
-        cssEase: "linear",
-        vertical: true,
-        arrows: false,
-        rtl: true
-    };
+    const photoTracks = [[...photoLeft, ...photoLeft], [...photoRight, ...photoRight]];
 
     return (
         <section>
@@ -106,55 +38,38 @@ export const SectionMain = () => {
                         <li className={`h-[1px] w-full max-w-[120px] bg-soft-light ${css.fadeIn}`}></li>
                     </ul>
                     <div
-                        className={`flex gap-[44px] flex-1 justify-center 2xl-max:gap-[24px] xl-max:hidden ${css.fadeIn}`}>
-                        <SliderComponent className={`flex flex-col`} settings={leftVerticalSettings}>
-                            {upperPhotos.map((photo, index) =>
-                                <Image
-                                    loading={'lazy'}
-                                    key={index}
-                                    className={`object-cover block min-w-[224px] h-[280px] my-[22px] box-border 2xl-max:my-[12px]`}
-                                    src={photo}
-                                    alt={`photo${index}`}
-                                >
-                                </Image>)}
-                        </SliderComponent>
-                        <SliderComponent className={`flex flex-col`} settings={rightVerticalSettings}>
-                            {lowerPhotos.map((photo, index) =>
-                                <Image
-                                    loading={'lazy'}
-                                    key={index}
-                                    className={`object-cover block min-w-[224px] h-[280px] my-[22px] box-border 2xl-max:my-[12px]`}
-                                    src={photo}
-                                    alt={`photo${index}`}
-                                >
-                                </Image>)}
-                        </SliderComponent>
+                        className={`flex gap-[36px] flex-1 justify-center 2xl-max:gap-[20px] xl-max:hidden ${css.fadeIn}`}>
+                        {photoTracks.map(photos => (
+                            <div key={photos[0].src} className={`flex shrink-0 flex-col self-start ${css.verticalTrack}`}>
+                                {photos.map((photo, index) => (
+                                    <Image
+                                        loading="lazy"
+                                        key={index}
+                                        className="object-cover w-[224px] h-[280px] my-[11px] 2xl-max:my-[6px]"
+                                        src={photo}
+                                        alt={index < photos.length / 2 ? `photo${index}` : ""}
+                                    />
+                                ))}
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
-            <div className={`flex flex-col gap-[16px] overflow-hidden xl-min:hidden lg-max:gap-[8px] ${css.fadeIn}`}>
-                <SliderComponent settings={upperHorizontalSettings}>
-                    {upperPhotos.map((photo, index) =>
-                        <Image
-                            loading={'lazy'}
-                            key={index}
-                            src={photo}
-                            alt={`photo${index}`}
-                            className={`object-cover block h-[260px] min-w-[238px] px-[8px] box-border lg-max:min-w-[140px] lg-max:h-[180px] lg-max:px-[4px] md-max:min-w-[120px] md-max:h-[160px]`}
-                        >
-                        </Image>)}
-                </SliderComponent>
-                <SliderComponent settings={lowerHorizontalSettings}>
-                    {lowerPhotos.map((photo, index) =>
-                        <Image
-                            loading={'lazy'}
-                            key={index}
-                            src={photo}
-                            alt={`photo${index}`}
-                            className={`object-cover block h-[260px] min-w-[238px] px-[8px] box-border lg-max:min-w-[140px] lg-max:h-[180px] lg-max:px-[4px] md-max:min-w-[120px] md-max:h-[160px]`}
-                        >
-                        </Image>)}
-                </SliderComponent>
+            <div className={`flex flex-col gap-[12px] overflow-hidden xl-min:hidden lg-max:gap-[6px] ${css.fadeIn}`}>
+                {photoTracks.map(photos => (
+                    <div key={photos[0].src} className={`flex w-max ${css.horizontalTrack}`}>
+                        {photos.map((photo, index) => (
+                            <Image
+                                loading="lazy"
+                                key={index}
+                                sizes="(max-width: 429px) 120px, (max-width: 743px) max(140px, 25vw), max(238px, 25vw)"
+                                className="object-cover w-[25vw] h-[260px] min-w-[238px] px-[8px] lg-max:min-w-[140px] lg-max:h-[180px] lg-max:px-[4px] md-max:min-w-[120px] md-max:h-[160px]"
+                                src={photo}
+                                alt={index < photos.length / 2 ? `photo${index}` : ""}
+                            />
+                        ))}
+                    </div>
+                ))}
             </div>
         </section>
     )
