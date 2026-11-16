@@ -67,20 +67,20 @@ export const priceTable: Record<string, any> = {
         data: [
             {
                 service: 'Стрижка женская',
-                top: '6 000 — 8 000 р.',
-                stylist: '4 000 р.',
+                top: '7 000 — 8 000 р.',
+                stylist: '5 000 р.',
                 expert: '2 500 р.'
             },
             {
                 service: 'Укладка',
-                top: '2 500 — 3 000 р.',
-                stylist: '2 000 р.',
+                top: '3 000 р.',
+                stylist: '2 500 р.',
                 expert: '1 500 р.'
             },
             {
                 service: 'Утюг, кудри',
-                top: '3000 — 3 500 р.',
-                stylist: '2 500 р.',
+                top: '3 500 р.',
+                stylist: '3 000 р.',
                 expert: '2 000 р.'
             },
             {
@@ -91,14 +91,14 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Челка',
-                top: '1 500 р.',
-                stylist: '1 000 р.',
+                top: '2 000 р.',
+                stylist: '1 500 р.',
                 expert: '800 р.'
             },
             {
                 service: 'Шатуш/Айртач',
-                top: '',
-                stylist: '7 500 — 9 500 р.',
+                top: '12 000 р.',
+                stylist: '9 000 — 11 000 р.',
                 expert: ''
             },
             {
@@ -115,14 +115,14 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Стрижка детская',
-                top: '2 500 р.',
+                top: '2 500 — 3 000 р.',
                 stylist: '1 500 - 2 000 р.',
                 expert: '1 500 р.'
             },
             {
                 service: 'Стрижка мужская',
                 top: '3 500 - 4 000 р.',
-                stylist: '2 000 р.',
+                stylist: '2 500 р.',
                 expert: '2 000 р.'
             },
             {
@@ -137,26 +137,26 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Короткое',
-                top: '5 500 — 6 000 р.',
-                stylist: '5 000 р.',
+                top: '6 000 р.',
+                stylist: '5 500 р.',
                 expert: '4 000 р.'
             },
             {
                 service: 'Среднее',
-                top: '6 000 — 7 000 р.',
-                stylist: '5 500 р.',
+                top: '6 500 — 7 000 р.',
+                stylist: '6 000 р.',
                 expert: '4 500 р.'
             },
             {
                 service: 'Длинное',
                 top: '7 000 — 8 000 р.',
-                stylist: '6 000 р.',
+                stylist: '6 500 р.',
                 expert: '5 000 р.'
             },
             {
                 service: 'Сложное',
-                top: '8 500 — 10 000 р.',
-                stylist: '7 000 р.',
+                top: '8 500 — 12 000 р.',
+                stylist: '7 500 р.',
                 expert: '5 500 р.'
             },
             {
@@ -165,26 +165,26 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Частичное',
-                top: '5 000 — 6 000 р.',
-                stylist: '4 500 р.',
+                top: '5 500 — 6 000 р.',
+                stylist: '5 000 р.',
                 expert: '3 500 р.'
             },
             {
                 service: 'Короткое',
                 top: '6 000 — 6 500 р.',
-                stylist: '5 000 р.',
+                stylist: '5 500 р.',
                 expert: '4 000 р.'
             },
             {
                 service: 'Среднее',
-                top: '6 500 — 8 000 р.',
-                stylist: '6 000 р.',
+                top: '7 000 — 8 000 р.',
+                stylist: '6 500 р.',
                 expert: '5 000 р.'
             },
             {
                 service: 'Длинное',
-                top: '7 500 — 9 000 р.',
-                stylist: '6 500 р.',
+                top: '8 000 — 9 000 р.',
+                stylist: '7 500 р.',
                 expert: '5 500 р.'
             },
         ]
@@ -209,13 +209,13 @@ export const priceTable: Record<string, any> = {
         data: [
             {
                 service: 'Макияж',
-                daria: '9 000 — 10 000 р.',
-                sofia: '5 000 р.'
+                daria: '10 000 — 12 000 р.',
+                sofia: '7 000 р.'
             },
             {
                 service: 'Образ',
-                daria: '12 000 — 13 000 р.',
-                sofia: '7 000 р.'
+                daria: '14 000 — 15 000 р.',
+                sofia: '9 000 р.'
             },
             // {
             //     service: 'Оформление бровей',
@@ -263,32 +263,32 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Маникюр (европейский)',
-                top: '1 800 р.',
+                top: '1 900 р.',
                 // expert: '800 р.'
             },
             {
-                service: 'Покрытие (основа + лак закрепитель) / лечение',
-                top: '500 р. / 700 р.',
+                service: 'Покрытие (основа + лак + закрепитель) / лечение',
+                top: '700 р. / 500 р.',
                 // expert: '500 р.'
             },
             {
                 service: 'Покрытие гель-лаком',
-                top: '1 200 р.',
+                top: '1 300 р.',
                 // expert: '1 200 р.',
             },
             {
-                service: 'Покрытие гель-лаком с выравниваемой базой',
-                top: '1 200 р. / 1 700 р.',
+                service: 'Покрытие гель-лаком с выравниванием базой',
+                top: '1 300 р. / 1 800 р.',
                 // expert: '1 200 р.',
             },
             {
-                service: 'Наращивание ногтей',
+                service: 'Наращивание ногтей (маникюр, верхние или нижние формы, покрытие цветным гелем)',
                 top: '5 000 р.',
                 // expert: '3 000 р.',
             },
             {
-                service: 'Укрепление натуральных ногтей жестким гелем',
-                top: '1 200 р. / 1 700 р.',
+                service: 'Бондирование (маникюр + укрепление)',
+                top: '3 500 р.',
                 // expert: '1 200 р.',
             },
             {
@@ -327,8 +327,8 @@ export const priceTable: Record<string, any> = {
                 // expert: '600 - 1 000 р.',
             },
             {
-                service: 'Покрытие гель-лаком “Французский маникюр',
-                top: '1 700 р.',
+                service: 'Французский маникюр (покрытие гель-лаком)',
+                top: '1 900 р.',
                 // expert: '1 500 р.',
             },
             {
@@ -352,22 +352,22 @@ export const priceTable: Record<string, any> = {
             },
             {
                 service: 'Педикюр',
-                top: '3 200 р. / 3 500 р.',
+                top: '3 500 р. / 3 700 р.',
                 // expert: '2700 р.',
             },
             {
                 service: 'Педикюр мужской',
-                top: '3 200 р. / 3 500 р.',
+                top: '3 500 р. / 3 700 р.',
                 // expert: '2700 р.',
             },
             {
                 service: 'Обработка ногтей',
-                top: '2 100 р. / 2 300 р.',
+                top: '2 300 р. / 2 500 р.',
                 // expert: '1500 р.',
             },
             {
                 service: 'Обработка ступней',
-                top: '2 100 р. / 2 300 р.',
+                top: '2 300 р. / 2 500 р.',
                 // expert: '1500 р.',
             },
             {
